@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>{{user_info.login}}</h1>
+
+<img class="avatar_image" src="{{user_info.avatar_url}}">
+
+<p>Username: {{user_info.name}}</p>
+
+<p>Public repositories: {{user_info.repos}}</p>
+
+<p><a href="{{user_info.home_page}}">Visit {{user_info.login}} at GitHub</a></p>
+
+<p><a href="/">Search again?</a></p>
+{% endblock %}

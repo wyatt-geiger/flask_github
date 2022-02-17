@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub API App</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
 
-    <h1>TODO - complete this page</h1>
+<h1>Discover More About a GitHub User</h1>
     
-</body>
-</html>
+<form method="GET" action="get_user">
+    <label>GitHub Username:</label><input type="text" name="username">
+    <button type="submit">Go!</button>
+</form>
+
+{% endblock %}
